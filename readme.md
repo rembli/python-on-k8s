@@ -7,6 +7,10 @@ Source: https://betterprogramming.pub/getting-started-with-kubernetes-for-python
 Run in shell
 > kubectl apply -f ./k8s
 
+Run in shell to open 
+
+> kubectl port-forward -n python-on-k8s service/python-api 3000:3000 
+
 Run in browser
 > http://localhost:32020/
 

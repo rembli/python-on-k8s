@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: node-port
+  name: python-api
   namespace: python-on-k8s
+  labels:
+    app: python-api    
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - port: 3050
+    - port: 3000
       targetPort: 3000
-      nodePort: 32020
   selector:
-    run: connectApi
+    app: python-api
