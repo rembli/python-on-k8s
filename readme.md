@@ -2,7 +2,13 @@
 
 Source: https://betterprogramming.pub/getting-started-with-kubernetes-for-python-254d4c1d2041
 
-## Tipps and tricks
+### Deploy to K8S
+
+Run in shell
+> kubectl apply -f ./k8s
+
+Run in browser
+> http://localhost:32020/
 
 ### Run K8s Dashboard
 
