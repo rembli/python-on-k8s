@@ -7,7 +7,7 @@ Source: https://betterprogramming.pub/getting-started-with-kubernetes-for-python
 Run in shell
 > kubectl apply -f ./k8s
 
-Use Port Forwarding to Access Applications in a Cluster
+Use Port Forwarding to access apps in  cluster from browser
 > kubectl port-forward -n python-on-k8s service/python-api 3000:3000 
 
 Run in browser
@@ -18,7 +18,7 @@ Run in browser
 Run in shell
  > kubctl proxy
  
- Start browser
+Start browser
 > http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/overview?namespace=default
 
 ### Remove from cluster
