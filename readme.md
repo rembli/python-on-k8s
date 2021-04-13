@@ -17,3 +17,8 @@ Run in shell
  
  Start browser
 > http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/overview?namespace=default
+
+### Remove from cluster
+
+Run in shell
+> kubectl delete namespace python-on-k8s
