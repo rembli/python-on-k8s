@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-api
+  namespace: python-on-k8s
+spec:
+  selector:
+    matchLabels:
+      app: python-api
+  template:
+    metadata:
+      namespace: python-on-k8s    
+      labels:
+        app: python-api
+    spec:
+      containers:
+      - name: client
+        image: rembli/python-on-k8s
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
+
